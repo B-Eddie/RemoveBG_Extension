@@ -1,0 +1,27 @@
+{
+  "name": "CopyBG",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Extension that lets you copy images without the bg",
+  "icons": {
+    "48": "icon.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "service_worker": "action.js"
+  },
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "contentSettings",
+    "contextMenus",
+    "cookies",
+    "idle",
+    "management",
+    "notifications",
+    "tabs",
+    "background",
+    "alarms",
+    "storage"
+  ]
+}
