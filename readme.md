@@ -1,3 +1,6 @@
+<img width="193" alt="Screenshot 2024-08-29 at 10 40 28 PM" src="https://github.com/user-attachments/assets/30a18c42-84f4-407d-8393-5eebd1f945a1">
+<img width="836" alt="Screenshot 2024-08-29 at 10 41 53 PM" src="https://github.com/user-attachments/assets/e6024435-2f01-4062-a1ea-0793d01c0018">
+
 # CopyBG
 A tool for copying transparent images
 
