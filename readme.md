@@ -9,7 +9,7 @@ It is a tool that is on the right-click menu. When you right click an image, it 
 
 ## How to use
 1. Clone this repo with `git clone https://github.com/B-Eddie/RemoveBG_Extension`
-2. Create an account from (remove.bg)[https://accounts.kaleido.ai/users]
+2. Create an account from [remove.bg](https://accounts.kaleido.ai/users)
 3. Create an API key
 4. Insert the API key in action.js, in apiKeys
 5. Go to https://chrome://extensions
