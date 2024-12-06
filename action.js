@@ -1,4 +1,3 @@
-
 let apiKeys = [];
 
 function fetchApiKeys() {
@@ -34,6 +33,9 @@ chrome.runtime.onInstalled.addListener(function () {
       console.log("Context menu item created successfully.");
     }
   });
+
+  // Set the popup
+  chrome.browserAction.setPopup({ popup: "popup.html" });
 });
 
 chrome.storage.local.get("apiKeys", (result) => {
@@ -43,7 +45,6 @@ chrome.storage.local.get("apiKeys", (result) => {
     fetchApiKeys();  // if not in storage
   }
 });
-
 
 function base64ToBlob(base64, contentType = "") {
   if (!base64) {
@@ -130,8 +131,8 @@ function genericOnClick(info) {
   if (info.menuItemId === "image") {
     removeImageBackground(info.srcUrl);
     chrome.storage.local.set({ alertMessage: "You clicked me!" }, function () {
-      chrome.action.setPopup({ popup: "popup.html" });
-      chrome.action.openPopup();
+      // chrome.browserAction.setPopup({ popup: "popup.html" });
+      // chrome.browserAction.openPopup();
     });
   } else {
     console.log("Standard context menu item clicked.");
